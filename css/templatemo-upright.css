@@ -19,12 +19,13 @@ https://templatemo.com/tm-555-upright
 
 html, body { overflow-x: hidden; }
 body { font-family: 'Kumbh Sans', sans-serif; background-color: #252323;}
-div, a, p { color: #DAD2BC; font-size: medium }
+div, p { color: #DAD2BC; font-size: medium }
+a { color:#8DA9C4 }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
 a:hover {
 	color: #90E0EF;
-	text-decoration: none;
+	text-decoration: none
 }
 
 .container-fluid { margin-left: 0; }
@@ -80,9 +81,12 @@ hr { border-top: 4px solid #EEF4ED; }
 	position: relative;
 }
 
-.tm-section { padding: 50px 70px 50px 0; }
+.tm-section { padding-top: 50px;
+	padding-right: 70px;
+	padding-bottom: 0;
+	padding-left: 0; }
 
-#gallery,
+#skills,
 #about,
 #contact {
 	padding-bottom: 150px;
@@ -188,31 +192,12 @@ hr { border-top: 4px solid #EEF4ED; }
 }
 
 /* Home section */
-#home { min-height: 100vh; background-color:}
+#home { min-height: 100vh; }
 .tm-col-home-l { width: calc(100% - 300px); }
-
-.tm-img-home-container {
-	width: 250px;
-	height: 500px;
-	background: url(../img/img-home-01.jpg) no-repeat center;
-	background-size: cover;
-	margin-right: 0;
-	margin-left: auto;
-}
 
 .home-intro-h2 {
 	font-size: 50px;
 	color: #00d5ff;
-}
-
-.skills-section {
-	display: flex;
-}
-
-.skill-imgs {
-	width: 100px;
-	height: 100px;
-	object-fit: cover;
 }
 
 @media (max-width: 1600px) {
@@ -245,8 +230,88 @@ hr { border-top: 4px solid #EEF4ED; }
 	color: #068ccf;
 }
 
-/* Gallery section */
-.tm-gallery {
+
+.design-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 20px;
+  }
+  
+  .design {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .timeline {
+	width: 80%;
+	height: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .timeline-content {
+	padding: 20px;
+	background: #1f1f1f;
+	-webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+			box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+	border-radius: 5px;
+	color: white;
+	padding: 1.75rem;
+	transition: 0.4s ease;
+	overflow-wrap: break-word !important;
+	margin: 1rem;
+	margin-bottom: 20px;
+	border-radius: 6px;
+  }
+  
+  .timeline-component {
+	margin: 0px 20px 20px 20px;
+	text-align: center;
+  }
+
+ .timeline-component h2 {
+	font-size: 20px;
+ }
+
+.timeline-component img {
+	max-width: 100px;
+}
+  
+  @media screen and (min-width: 768px) {
+	.timeline {
+	  display: grid;
+	  grid-template-columns: 1fr 3px 1fr;
+	}
+	.timeline-middle {
+	  position: relative;
+	  background-image: linear-gradient(50deg, #CAF0F8, #90E0EF, #023E8A, #0077B6, #00B4D8, #90E0EF,#CAF0F8);
+	  width: 3px;
+	  height: 100%;
+	}
+	.main-middle {
+	  opacity: 0;
+	}
+	.timeline-circle {
+	  position: absolute;
+	  top: 0;
+	  left: 50%;
+	  width: 15px;
+	  height: 15px;
+	  border-radius: 50%;
+	  background-image: linear-gradient(70deg, #CAF0F8, #90E0EF, #023E8A, #0077B6, #00B4D8, #90E0EF,#CAF0F8);
+	  -webkit-transform: translateX(-50%);
+			  transform: translateX(-50%);
+	}
+  }
+
+/* skills section */
+.tm-skills {
 	position: relative;
 	margin: 0 -10px;
 	list-style: none;
@@ -254,7 +319,7 @@ hr { border-top: 4px solid #EEF4ED; }
 	overflow: hidden;
 }
 
-.tm-gallery-links {
+.tm-skills-links {
 	padding-left: 0;
     display: flex;
 	flex-wrap: wrap;
@@ -262,25 +327,25 @@ hr { border-top: 4px solid #EEF4ED; }
 	margin-bottom: 0;
 }
 
-.tm-gallery-links li {
+.tm-skills-links li {
 	list-style: none;
 	margin-bottom: 30px;
 	margin-right: 55px;
 }
 
-.tm-gallery-link {
+.tm-skills-link {
 	padding: 15px;
-	color: #006699;	
+	color: #DAD2BC;	
 }
 
-.tm-gallery-link.active { color: #666666; }
-.tm-gallery-link-icon { width: 25px; }
+.tm-skills-link.active { color:#00d5ff; }
+.tm-skills-link-icon { width: 25px; }
 
 .tm-paging {
 	margin-top: 35px;
 	overflow: auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .tm-paging-link {
@@ -290,16 +355,16 @@ hr { border-top: 4px solid #EEF4ED; }
     height: 40px;
     align-items: center;
     justify-content: center;
-    background: white;
-    color: #999;
+    background: #252323;
+    color: #DAD2BC;
     margin-right: 15px;
     margin-bottom: 15px;
 }
 
 a.tm-paging-link.active,
 a.tm-paging-link:hover {
-    background: #006699;
-    color: white;
+    background: #00d5ff;
+    color: #252323;
 }
 
 @media (max-width: 1972px) { .tm-paging { max-width: 870px; } }
@@ -318,45 +383,45 @@ a.tm-paging-link:hover {
 	.tm-paging-link { margin-right: 5px; }
 }
 
-.tm-gallery figure {
+.tm-skills figure {
 	position: relative;
 	z-index: 50;
 	float: left;
 	overflow: hidden;
 	margin: 1%;
-	min-width: 270px;
-	max-width: 270px;
-	max-height: 180px;
-	width: 48%;
-	background: #3085a3;
+	min-width: 75px;
+	max-width: 100px;
+	height: auto;
+	width: 100%;
 	text-align: center;
-	cursor: pointer;
+	cursor: auto;
 }
 
-.tm-gallery figure img {
+.tm-skills figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
+	object-fit: contain;
 }
 
-.tm-gallery figure figcaption {
+.tm-skills figure figcaption {
 	padding: 1em;
 	color: #fff;
-	text-transform: uppercase;
 	font-size: 1em;
+	text-align: center;
+	overflow: auto;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
-.tm-gallery figure figcaption::before,
-.tm-gallery figure figcaption::after {
+.tm-skills figure figcaption::before,
+.tm-skills figure figcaption::after {
 	pointer-events: none;
 }
 
-.tm-gallery figure figcaption,
-.tm-gallery figure figcaption > a {
+.tm-skills figure figcaption,
+.tm-skills figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -366,7 +431,7 @@ a.tm-paging-link:hover {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.tm-gallery figure figcaption > a {
+.tm-skills figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
 	white-space: nowrap;
@@ -374,19 +439,22 @@ a.tm-paging-link:hover {
 	opacity: 0;
 }
 
-.tm-gallery figure h2 {
+.tm-skills figure h2 {
+	margin: 0;
+	font-size: 16;
 	word-spacing: -0.15em;
-	font-weight: 300;
+	font-weight: 5;
+	white-space: normal;
 }
 
-.tm-gallery figure h2 span { font-weight: 800; }
+.tm-skills figure h2 span { font-weight: 800; display: inline-block; max-width: 100%; }
 
-.tm-gallery figure h2,
-.tm-gallery figure p {
+.tm-skills figure h2,
+.tm-skills figure p {
 	margin: 0;
 }
 
-.tm-gallery figure p {
+.tm-skills figure p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
@@ -402,7 +470,7 @@ figure.effect-honey img {
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 	width: 200px;
-	height: auto;
+	height: 200px;
 	object-fit: contain;
 }
 
@@ -424,7 +492,7 @@ figure.effect-honey h2 {
 	position: absolute;
 	bottom: 0;
     left: 0;
-    font-size: 25px;
+    font-size: 15px;
 	padding: 16px;
 	width: 100%;
 	text-align: left;
