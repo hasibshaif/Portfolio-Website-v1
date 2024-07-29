@@ -184,7 +184,7 @@ hr { border-top: 4px solid #EEF4ED; }
 #home { min-height: 100vh; }
 .tm-col-home-l { width: calc(100% - 300px); }
 
-.home-intro-h2 {
+.about-intro-h2 {
 	font-size: 50px;
 	color: #00d5ff;
 }
