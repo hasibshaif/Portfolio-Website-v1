@@ -7,13 +7,13 @@ https://templatemo.com/tm-555-upright
 */
 
 html, body { overflow-x: hidden; }
-body { font-family: 'Kumbh Sans', sans-serif; background-color: #252323;}
-div, p { color: #DAD2BC; font-size: medium }
+body { font-family: 'Kanit', sans-serif; background-image: linear-gradient(#252323, #616060);}
+div, p { color: #c5e0ff; font-size: medium }
 a { color:#8DA9C4 }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
 a:hover {
-	color: #90E0EF;
+	color: #068ccf;
 	text-decoration: none
 }
 
@@ -52,7 +52,7 @@ hr { border-top: 4px solid #EEF4ED; }
 .tm-mt-100 { margin-top: 100px; }
 
 .tm-sidebar {
-	background-color: #252323;
+	background-image: linear-gradient(#252323, #616060);
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -144,7 +144,7 @@ hr { border-top: 4px solid #EEF4ED; }
 
 .nav-link {
 	position: relative;
-	color: #DAD2BC;
+	color: #c5e0ff;
 	font-size: 20px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -279,7 +279,7 @@ hr { border-top: 4px solid #EEF4ED; }
 	}
 	.timeline-middle {
 	  position: relative;
-	  background-image: linear-gradient(50deg, #CAF0F8, #90E0EF, #023E8A, #0077B6, #00B4D8, #90E0EF,#CAF0F8);
+	  background-image: linear-gradient(90deg, #CAF0F8, #90E0EF, #023E8A, #0077B6, #00B4D8, #90E0EF,#CAF0F8);
 	  width: 3px;
 	  height: 100%;
 	}
@@ -293,7 +293,7 @@ hr { border-top: 4px solid #EEF4ED; }
 	  width: 15px;
 	  height: 15px;
 	  border-radius: 50%;
-	  background-image: linear-gradient(70deg, #CAF0F8, #90E0EF, #023E8A, #0077B6, #00B4D8, #90E0EF,#CAF0F8);
+	  background-image: linear-gradient(40deg, #CAF0F8, #90E0EF, #023E8A, #0077B6, #00B4D8, #90E0EF,#CAF0F8);
 	  -webkit-transform: translateX(-50%);
 			  transform: translateX(-50%);
 	}
@@ -324,10 +324,10 @@ hr { border-top: 4px solid #EEF4ED; }
 
 .tm-skills-link {
 	padding: 15px;
-	color: #DAD2BC;	
+	color: #c5e0ff;	
 }
 
-.tm-skills-link.active { color:#00d5ff; }
+.tm-skills-link.active { color:#068ccf; }
 .tm-skills-link-icon { width: 25px; }
 
 .tm-paging {
@@ -345,7 +345,7 @@ hr { border-top: 4px solid #EEF4ED; }
     align-items: center;
     justify-content: center;
     background: #252323;
-    color: #DAD2BC;
+    color: #c5e0ff;
     margin-right: 15px;
     margin-bottom: 15px;
 }
@@ -662,6 +662,7 @@ figure.effect-honey:hover ul li a {
 }
 
 .tm-projects-title { font-size: 24px; }
+.tm-projects-title:hover { color: #068ccf}
 .tm-projects-subtitle { font-size: 20px; }
 
 /* Contact */
@@ -705,6 +706,7 @@ select:not([multiple]) {
 .tm-contact-links {
 	padding-left: 0;
 	margin: 0;
+	text-align: center;
 }
 
 .tm-contact-links li { list-style: none; }
