@@ -561,9 +561,13 @@ figure.effect-honey:hover ul li a {
 	color: white;
 }
 
-.fab { transition: all 0.3s ease; }
+.fab, 
+.fas { 
+	transition: all 0.5s ease; 
+}
 .tm-social-link:hover .fa-github { color: #8134AF; }
 .tm-social-link:hover .fa-linkedin { color: #0075b4; }
+.tm-social-link:hover .fa-globe { color: #f33b3b; }
 
 .slick-dots {
 	position: static;
@@ -663,7 +667,7 @@ figure.effect-honey:hover ul li a {
 
 .tm-projects-title { font-size: 24px; }
 .tm-projects-title:hover { color: #068ccf}
-.tm-projects-subtitle { font-size: 20px; }
+.tm-projects-subtitle { font-size: 18px; color: rgb(255, 237, 204)}
 
 /* Contact */
 
