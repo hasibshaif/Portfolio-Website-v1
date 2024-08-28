@@ -8,7 +8,7 @@ https://templatemo.com/tm-555-upright
 
 html, body { overflow-x: hidden; }
 body { font-family: 'Kanit', sans-serif; background-image: linear-gradient(#252323, #616060);}
-div, p { color: #c5e0ff; font-size: medium }
+div, p { color: #c5e0ff; font-size: small }
 a { color:#8DA9C4 }
 p, address { line-height: 1.8; }
 a {	transition: all 0.3s ease; }
